@@ -28,7 +28,7 @@
  #grid {
   padding-left: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
  }
 
  #grid li {
@@ -39,7 +39,8 @@
   background-color: #3498DC;
   border: 1px solid #2C86C1;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
-  margin-right: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
   font-weight: bold;
