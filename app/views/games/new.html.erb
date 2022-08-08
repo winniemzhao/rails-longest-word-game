@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Countdown!</h1>
+  <ul id="grid">
+    <% @letters.each do |letter| %>
+      <li><%= letter %></li>
+    <% end %>
+  </ul>
+
+  <form action="/score" method="post" data-turbo="false">
+    <label for="word" class="form-label">What is the longest word you can find?</label>
+    <div class="input-group">
+      <input type="text" name="word" value="<%= params[:answer] %>" class="form-control">
+      <input type="submit" value="Play" class="btn">
+    </div>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :letters, @letters %>
+  </form>
+</div>

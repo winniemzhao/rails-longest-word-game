@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Results:</h1>
+  <p><%#= @result %></p>
+  <% if @result == "grid" %>
+  <p>Sorry but <span class="bold"><%= @word %></span> can't be built out of <%= @letters.join(', ') %></p>
+  <% elsif @result == "dictionary" %>
+  <p>Sorry but <span class="bold"><%= @word %></span> does not seem to be a valid English word.</p>
+  <% elsif @result == "valid" %>
+  <p><span class="bold">Congratulations! </span><%= @word %> is a valid English word!</p>
+  <% end %>
+  <%= link_to 'Play again', new_path %>
+</div>
