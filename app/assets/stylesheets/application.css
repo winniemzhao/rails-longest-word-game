@@ -28,11 +28,14 @@
  #grid {
   padding-left: 0;
   display: flex;
+  justify-content: space-between;
  }
 
  #grid li {
   list-style-type: none;
-  padding: 0.5rem 0.9rem;
+  text-align: center;
+  width: 3rem;
+  padding: 0.75rem 0;
   background-color: #3498DC;
   border: 1px solid #2C86C1;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
